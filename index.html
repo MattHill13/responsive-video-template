@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/video.css">
+	<link rel="stylesheet" type="text/css" href="mediaelementjs/mediaelementplayer.css">
+</head>
+<body>
+
+<div id="page-container">
+	<section id="intro">
+		<h1>Responsive Video Test</h1>
+		<p>The aim of this template is to ensure we have cross-compatible videos that will play and be fully responsive across all devices and browsers</p>
+		<p>The following techniques have been used:</p>
+		<ul>
+			<li>Elastic videos - http://webdesignerwall.com/tutorials/css-elastic-videos</li>
+			<li>MediaElement.js - http://mediaelementjs.com/</li>
+		</ul>
+	</section>
+	<section id="list-item">
+		<h2>List Item Test - on Amazon S3</h1>
+		<ul>
+			<li>
+				<div class="video-wrapper">
+					<div class="video-container">
+						<video controls="controls" poster="images/meet-avvio-still.jpg"  class="no-svg" width="800" height="600" style="width: 100%; height: 100%;">
+							<source src="https://s3.amazonaws.com/avvioreply/About/Around-Avvio.mp4" type="video/mp4">
+							<source src="https://s3.amazonaws.com/avvioreply/About/Around-Avvio.ogv" type="video/ogv">
+							<source src="https://s3.amazonaws.com/avvioreply/About/Around-Avvio.webm" type="video/webm">
+						</video>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<section id="list-item">
+		<h2>Div Test - on Amazon S3</h1>
+			<div>
+				<div class="video-wrapper">
+					<div class="video-container">
+						<video controls="controls" poster="images/meet-avvio-still.jpg" width="800" height="600">
+							<source src="https://s3.amazonaws.com/avvioreply/About/Around-Avvio.mp4" type="video/mp4">
+							<source src="https://s3.amazonaws.com/avvioreply/About/Around-Avvio.ogv" type="video/ogv">
+							<source src="https://s3.amazonaws.com/avvioreply/About/Around-Avvio.webm" type="video/webm">
+						</video>
+					</div>
+				</div>
+			</div>
+	</section>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="mediaelementjs/mediaelement-and-player.min.js"></script>
+<script>
+	$('video').mediaelementplayer();
+</script>
+</body>
+</html>
